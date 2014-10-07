@@ -369,6 +369,13 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
 - (void)addLinkToTransitInformation:(NSDictionary *)components
                           withRange:(NSRange)range;
 
+/**
+ Returns a link at point
+ 
+ @param point A point of a label.
+ */
+
+- (NSTextCheckingResult *)linkAtPoint:(CGPoint)point;
 @end
 
 /**
